@@ -1,3 +1,4 @@
+/* Reset básico */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #222;
 }
 
+/* Cabeçalho */
 header {
   background: linear-gradient(to right, #ff0057, #8000ff);
   color: white;
@@ -22,6 +24,7 @@ header h1 {
   font-size: 2.5em;
 }
 
+/* Conteúdo principal */
 main {
   width: 80%;
   margin: 20px auto;
@@ -37,10 +40,12 @@ h2 {
   padding-left: 10px;
 }
 
+/* Listas */
 ol, ul {
   margin: 10px 0 20px 20px;
 }
 
+/* Tabela */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -67,6 +72,7 @@ td img {
   width: 50px;
 }
 
+/* Links */
 a {
   color: #ff0057;
   font-weight: bold;
@@ -77,10 +83,58 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   background-color: #111;
   color: white;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+}
+
+/* Cards responsivos das bandas */
+.cards-bandas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-banda {
+  display: block; /* Faz o <a> virar um card */
+  text-decoration: none;
+  color: inherit;
+  flex: 1 1 200px;
+  max-width: 220px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.card-banda img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-banda h3 {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #8000ff;
+}
+
+.card-banda:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  background: #ff0057;
+  color: white;
+}
+
+.card-banda:hover h3 {
+  color: white;
 }
