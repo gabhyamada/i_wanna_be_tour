@@ -1,1 +1,1 @@
-# https://gabhyamada.github.io/i_wanna_be_tour
+# https://gabhyamada.github.io/i-wanna-be-tour
